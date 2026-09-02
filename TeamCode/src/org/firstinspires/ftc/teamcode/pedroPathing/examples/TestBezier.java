@@ -7,6 +7,7 @@ import com.pedropathing.geometry.BezierCurve;
 import com.pedropathing.geometry.Pose;
 import com.pedropathing.paths.PathChain;
 import com.qualcomm.robotcore.eventloop.opmode.Autonomous;
+import com.qualcomm.robotcore.eventloop.opmode.Disabled;
 import com.qualcomm.robotcore.eventloop.opmode.OpMode;
 import org.firstinspires.ftc.teamcode.pedroPathing.Constants;
 import org.firstinspires.ftc.teamcode.pedroPathing.tuning.tuning_util.Adjuster;
@@ -14,6 +15,7 @@ import org.firstinspires.ftc.teamcode.pedroPathing.tuning.tuning_util.Adjuster;
 import java.util.ArrayList;
 import java.util.List;
 
+@Disabled
 @Autonomous(group="Pedro")
 public class TestBezier extends OpMode {
 

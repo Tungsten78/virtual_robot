@@ -6,6 +6,7 @@ import com.pedropathing.geometry.BezierLine;
 import com.pedropathing.geometry.Pose;
 import com.pedropathing.paths.Path;
 import com.qualcomm.robotcore.eventloop.opmode.Autonomous;
+import com.qualcomm.robotcore.eventloop.opmode.Disabled;
 import com.qualcomm.robotcore.eventloop.opmode.OpMode;
 import org.firstinspires.ftc.teamcode.pedroPathing.Constants;
 import org.firstinspires.ftc.teamcode.pedroPathing.tuning.tuning_util.Adjuster;
@@ -25,6 +26,7 @@ import java.util.List;
  *
  * Adapted by J. Kenney for use in virtual_robot.
  */
+@Disabled
 @Autonomous(group="Pedro")
 public class Line extends OpMode {
 

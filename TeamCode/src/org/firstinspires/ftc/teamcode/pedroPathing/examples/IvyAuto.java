@@ -9,6 +9,7 @@ import com.pedropathing.ivy.Scheduler;
 import com.pedropathing.ivy.groups.Groups;
 import com.pedropathing.paths.PathChain;
 import com.qualcomm.robotcore.eventloop.opmode.Autonomous;
+import com.qualcomm.robotcore.eventloop.opmode.Disabled;
 import com.qualcomm.robotcore.eventloop.opmode.OpMode;
 import com.qualcomm.robotcore.hardware.DcMotor;
 import com.qualcomm.robotcore.hardware.DcMotorEx;
@@ -20,6 +21,7 @@ import static com.pedropathing.ivy.groups.Groups.*;
 import static com.pedropathing.ivy.Scheduler.*;
 import static com.pedropathing.ivy.commands.Commands.*;
 
+@Disabled
 @Autonomous(group="Pedro")
 public class IvyAuto extends OpMode {
 
