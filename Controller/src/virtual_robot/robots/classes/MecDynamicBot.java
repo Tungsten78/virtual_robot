@@ -38,7 +38,7 @@ import java.util.HashMap;
  * combo box. The filename refers to the fxml file that contains the markup for the graphical UI.
  * Note: the fxml file must be located in the virtual_robot.robots.classes.fxml folder.
  */
-@BotConfig(name = "MecDynamic Bot", filename = "mec_dynamic_bot")
+@BotConfig(name = "MecDynamic Bot", filename = "mec_dynamic_bot", disabled = true)
 public class MecDynamicBot extends DynamicMecanumBase {
 
     /*
