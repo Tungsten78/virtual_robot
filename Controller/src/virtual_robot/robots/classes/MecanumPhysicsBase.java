@@ -208,6 +208,9 @@ public abstract class MecanumPhysicsBase extends VirtualBot {
             if (
                     i<2 && (mtRev && dirRev || !mtRev && !dirRev) || i>=2 && (mtRev && !dirRev || !mtRev && dirRev)
             ) wSpd[i] = -wSpd[i];
+            if (isWheelMechanicallyReversed(i)) {
+                wSpd[i] = -wSpd[i];
+            }
         }
 
         /*
@@ -338,6 +341,14 @@ public abstract class MecanumPhysicsBase extends VirtualBot {
                     y + halfBotWidth * Math.cos(sensorHeading), sensorHeading);
         }
 
+    }
+
+    /**
+     * Returns whether the drivetrain mechanically reverses a wheel's motor output,
+     * such as through an external gear exchange.
+     */
+    protected boolean isWheelMechanicallyReversed(int wheelIndex) {
+        return false;
     }
 
     /**
